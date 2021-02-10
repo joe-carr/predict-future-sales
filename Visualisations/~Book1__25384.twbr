@@ -1,0 +1,1806 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.21.0110.1657                               -->
+<workbook source-build='2020.3.5 (20203.21.0110.1657)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sales_train' inline='true' name='federated.1x6oerq0uqovf6185sll50qc7cfo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sales_train' name='textscan.1ti78cy10tnv8d1bi91qt1jpm6uf'>
+            <connection class='textscan' directory='E:/Latest PyCharm/Shop sales prediction/Data/Raw' filename='sales_train.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ti78cy10tnv8d1bi91qt1jpm6uf' name='sales_train.csv' table='[sales_train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='date_block_num' ordinal='1' />
+            <column datatype='integer' name='shop_id' ordinal='2' />
+            <column datatype='integer' name='item_id' ordinal='3' />
+            <column datatype='real' name='item_price' ordinal='4' />
+            <column datatype='real' name='item_cnt_day' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ti78cy10tnv8d1bi91qt1jpm6uf' name='sales_train.csv' table='[sales_train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='date_block_num' ordinal='1' />
+            <column datatype='integer' name='shop_id' ordinal='2' />
+            <column datatype='integer' name='item_id' ordinal='3' />
+            <column datatype='real' name='item_price' ordinal='4' />
+            <column datatype='real' name='item_cnt_day' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_block_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[date_block_num]</local-name>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias>date_block_num</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shop_id]</local-name>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias>shop_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_id]</local-name>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias>item_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[item_price]</local-name>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias>item_price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_cnt_day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[item_cnt_day]</local-name>
+            <parent-name>[sales_train.csv]</parent-name>
+            <remote-alias>item_cnt_day</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='boolean' name='[Calculation_1784551359111131136]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='{ FIXED [item_id], [shop_id], [date]:COUNT([item_cnt_day])} &gt; 1' />
+      </column>
+      <column aggregation='None' caption='Item Price (bin)' datatype='integer' name='[Item Price (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='3' formula='[item_price]' peg='0' size='4779' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='sales_train.csv' datatype='table' name='[__tableau_internal_object_id__].[sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Date Block Num' datatype='integer' name='[date_block_num]' role='dimension' type='ordinal' />
+      <column caption='Item Cnt Day' datatype='real' name='[item_cnt_day]' role='measure' type='quantitative' />
+      <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+      <column caption='Item Price' datatype='real' name='[item_price]' role='measure' type='quantitative' />
+      <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sales_train.csv' id='sales_train.csv_8A8E37966BE74635B067C5F454DDDBF5'>
+            <properties context=''>
+              <relation connection='textscan.1ti78cy10tnv8d1bi91qt1jpm6uf' name='sales_train.csv' table='[sales_train#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='date_block_num' ordinal='1' />
+                  <column datatype='integer' name='shop_id' ordinal='2' />
+                  <column datatype='integer' name='item_id' ordinal='3' />
+                  <column datatype='real' name='item_price' ordinal='4' />
+                  <column datatype='real' name='item_cnt_day' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='items' inline='true' name='federated.01tgvbp190ivyz13na5ev18gn4e2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='items' name='textscan.0zib56o1rpv7we1fwwowg1bmuj18'>
+            <connection class='textscan' directory='E:/Latest PyCharm/Shop sales prediction/Data/Raw' filename='items.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0zib56o1rpv7we1fwwowg1bmuj18' name='items.csv' table='[items#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='item_name' ordinal='0' />
+            <column datatype='integer' name='item_id' ordinal='1' />
+            <column datatype='integer' name='item_category_id' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0zib56o1rpv7we1fwwowg1bmuj18' name='items.csv' table='[items#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='item_name' ordinal='0' />
+            <column datatype='integer' name='item_id' ordinal='1' />
+            <column datatype='integer' name='item_category_id' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[items.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[item_name]</local-name>
+            <parent-name>[items.csv]</parent-name>
+            <remote-alias>item_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[items.csv_50DE1FA1B9644C8694123F1CEB5EE691]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_id]</local-name>
+            <parent-name>[items.csv]</parent-name>
+            <remote-alias>item_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[items.csv_50DE1FA1B9644C8694123F1CEB5EE691]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_category_id]</local-name>
+            <parent-name>[items.csv]</parent-name>
+            <remote-alias>item_category_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[items.csv_50DE1FA1B9644C8694123F1CEB5EE691]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='items.csv' datatype='table' name='[__tableau_internal_object_id__].[items.csv_50DE1FA1B9644C8694123F1CEB5EE691]' role='measure' type='quantitative' />
+      <column caption='Item Category Id' datatype='integer' name='[item_category_id]' role='dimension' type='ordinal' />
+      <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+      <column caption='Item Name' datatype='string' name='[item_name]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='items.csv' id='items.csv_50DE1FA1B9644C8694123F1CEB5EE691'>
+            <properties context=''>
+              <relation connection='textscan.0zib56o1rpv7we1fwwowg1bmuj18' name='items.csv' table='[items#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='item_name' ordinal='0' />
+                  <column datatype='integer' name='item_id' ordinal='1' />
+                  <column datatype='integer' name='item_category_id' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='shops' inline='true' name='federated.0vaudu214xqknz17tjhcr0nzqglb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='shops' name='textscan.0i1e5ak1bjbkk416jjs9s19neb72'>
+            <connection class='textscan' directory='E:/Latest PyCharm/Shop sales prediction/Data/Raw' filename='shops.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0i1e5ak1bjbkk416jjs9s19neb72' name='shops.csv' table='[shops#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='shop_name' ordinal='0' />
+            <column datatype='integer' name='shop_id' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0i1e5ak1bjbkk416jjs9s19neb72' name='shops.csv' table='[shops#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='shop_name' ordinal='0' />
+            <column datatype='integer' name='shop_id' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[shops.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shop_name]</local-name>
+            <parent-name>[shops.csv]</parent-name>
+            <remote-alias>shop_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shops.csv_CD4C9E72867E426B8F1E125A010F237F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shop_id]</local-name>
+            <parent-name>[shops.csv]</parent-name>
+            <remote-alias>shop_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shops.csv_CD4C9E72867E426B8F1E125A010F237F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='shops.csv' datatype='table' name='[__tableau_internal_object_id__].[shops.csv_CD4C9E72867E426B8F1E125A010F237F]' role='measure' type='quantitative' />
+      <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+      <column caption='Shop Name' datatype='string' name='[shop_name]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='shops.csv' id='shops.csv_CD4C9E72867E426B8F1E125A010F237F'>
+            <properties context=''>
+              <relation connection='textscan.0i1e5ak1bjbkk416jjs9s19neb72' name='shops.csv' table='[shops#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='shop_name' ordinal='0' />
+                  <column datatype='integer' name='shop_id' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='test' inline='true' name='federated.0tccwry010hq0k1gsuwpv1wq4zvu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='test' name='textscan.1d6cci005wnuiw145np6v12zn334'>
+            <connection class='textscan' directory='E:/Latest PyCharm/Shop sales prediction/Data/Raw' filename='test.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1d6cci005wnuiw145np6v12zn334' name='test.csv' table='[test#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='shop_id' ordinal='1' />
+            <column datatype='integer' name='item_id' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1d6cci005wnuiw145np6v12zn334' name='test.csv' table='[test#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='shop_id' ordinal='1' />
+            <column datatype='integer' name='item_id' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[test.csv_5581059633C54CBC9846E83EC989A787]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shop_id]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>shop_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[test.csv_5581059633C54CBC9846E83EC989A787]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_id]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>item_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[test.csv_5581059633C54CBC9846E83EC989A787]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='test.csv' datatype='table' name='[__tableau_internal_object_id__].[test.csv_5581059633C54CBC9846E83EC989A787]' role='measure' type='quantitative' />
+      <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+      <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='test.csv' id='test.csv_5581059633C54CBC9846E83EC989A787'>
+            <properties context=''>
+              <relation connection='textscan.1d6cci005wnuiw145np6v12zn334' name='test.csv' table='[test#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='shop_id' ordinal='1' />
+                  <column datatype='integer' name='item_id' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='processed_train_set' inline='true' name='federated.1rg115m0zkip4o19w8tgj01malty' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pre_normalised_whole_df' name='textscan.1o1q5r71w9cph311jn53z01eqecv'>
+            <connection class='textscan' directory='E:/Latest PyCharm/Shop sales prediction/Data/Processed' filename='pre_normalised_whole_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1o1q5r71w9cph311jn53z01eqecv' name='pre_normalised_whole_df.csv' table='[pre_normalised_whole_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='shop_id' ordinal='1' />
+            <column datatype='integer' name='item_id' ordinal='2' />
+            <column datatype='integer' name='date_block_num' ordinal='3' />
+            <column datatype='real' name='total_count' ordinal='4' />
+            <column datatype='real' name='median_price' ordinal='5' />
+            <column datatype='real' name='total_revenue' ordinal='6' />
+            <column datatype='integer' name='item_category_id' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1o1q5r71w9cph311jn53z01eqecv' name='pre_normalised_whole_df.csv' table='[pre_normalised_whole_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='shop_id' ordinal='1' />
+            <column datatype='integer' name='item_id' ordinal='2' />
+            <column datatype='integer' name='date_block_num' ordinal='3' />
+            <column datatype='real' name='total_count' ordinal='4' />
+            <column datatype='real' name='median_price' ordinal='5' />
+            <column datatype='real' name='total_revenue' ordinal='6' />
+            <column datatype='integer' name='item_category_id' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shop_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shop_id]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>shop_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_id]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>item_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_block_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[date_block_num]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>date_block_num</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_count]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>total_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>median_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[median_price]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>median_price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>item_category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[item_category_id]</local-name>
+            <parent-name>[pre_normalised_whole_df.csv]</parent-name>
+            <remote-alias>item_category_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Actually sold something' datatype='boolean' name='[Calculation_1784551359157882882]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='SUM([total_count]) &gt; 1000000' />
+      </column>
+      <column aggregation='None' caption='Item Id (bin)' datatype='integer' name='[Item Id (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[item_id]' peg='0' size='455' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='pre_normalised_whole_df.csv' datatype='table' name='[__tableau_internal_object_id__].[pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69]' role='measure' type='quantitative' />
+      <column caption='Date Block Num' datatype='integer' name='[date_block_num]' role='dimension' type='ordinal' />
+      <column caption='Item Category Id' datatype='integer' name='[item_category_id]' role='dimension' type='ordinal' />
+      <column caption='Item Id' datatype='integer' name='[item_id]' role='measure' type='quantitative' />
+      <column caption='Median Price' datatype='real' name='[median_price]' role='measure' type='quantitative' />
+      <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+      <column caption='Total Count' datatype='real' name='[total_count]' role='measure' type='quantitative' />
+      <column caption='Total Revenue' datatype='real' name='[total_revenue]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='pre_normalised_whole_df.csv' id='pre_normalised_whole_df.csv_CAFB41E48EB944BC89AB3E97CB0D9F69'>
+            <properties context=''>
+              <relation connection='textscan.1o1q5r71w9cph311jn53z01eqecv' name='pre_normalised_whole_df.csv' table='[pre_normalised_whole_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='shop_id' ordinal='1' />
+                  <column datatype='integer' name='item_id' ordinal='2' />
+                  <column datatype='integer' name='date_block_num' ordinal='3' />
+                  <column datatype='real' name='total_count' ordinal='4' />
+                  <column datatype='real' name='median_price' ordinal='5' />
+                  <column datatype='real' name='total_revenue' ordinal='6' />
+                  <column datatype='integer' name='item_category_id' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Item Cnt Day' datatype='real' name='[item_cnt_day]' role='measure' type='quantitative' />
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[item_cnt_day]' derivation='Sum' name='[sum:item_cnt_day:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([item_cnt_day])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:item_id:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1x6oerq0uqovf6185sll50qc7cfo].[sum:item_cnt_day:qk]</rows>
+        <cols>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:date:qk]</cols>
+      </table>
+      <simple-id uuid='{6C4CA8E2-7CC3-4F45-9977-B3493F6B19BF}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Date Block Num' datatype='integer' name='[date_block_num]' role='dimension' type='ordinal' />
+            <column-instance column='[date_block_num]' derivation='None' name='[none:date_block_num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:date_block_num:ok]</rows>
+        <cols>[federated.1x6oerq0uqovf6185sll50qc7cfo].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{66FEC128-91AD-46D6-94DC-E6F636CE0B15}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D5E513BB-CBFE-4642-8944-35F295CDCF81}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1EB22480-40D6-4081-8F14-A071A81EF56F}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_train_set' name='federated.1rg115m0zkip4o19w8tgj01malty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rg115m0zkip4o19w8tgj01malty'>
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='measure' type='quantitative' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[total_count]' derivation='Sum' name='[sum:total_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Count' datatype='real' name='[total_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rg115m0zkip4o19w8tgj01malty].[sum:total_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rg115m0zkip4o19w8tgj01malty].[none:item_id:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2EDF1083-425E-4E4B-9715-A51CB979DA95}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test' name='federated.0tccwry010hq0k1gsuwpv1wq4zvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tccwry010hq0k1gsuwpv1wq4zvu'>
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tccwry010hq0k1gsuwpv1wq4zvu].[none:item_id:ok]'>
+            <groupfilter function='member' level='[none:item_id:ok]' member='168' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tccwry010hq0k1gsuwpv1wq4zvu].[none:item_id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0tccwry010hq0k1gsuwpv1wq4zvu].[none:item_id:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1689575C-06D6-4A75-9D7B-DA3C48C1DC6B}' />
+    </worksheet>
+    <worksheet name='Sheet 15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_train_set' name='federated.1rg115m0zkip4o19w8tgj01malty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rg115m0zkip4o19w8tgj01malty'>
+            <column datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column caption='Date Block Num' datatype='integer' name='[date_block_num]' role='dimension' type='ordinal' />
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='measure' type='quantitative' />
+            <column-instance column='[ID]' derivation='Min' name='[min:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='None' name='[none:ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date_block_num]' derivation='None' name='[none:date_block_num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_count]' derivation='Sum' name='[sum:total_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Count' datatype='real' name='[total_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1rg115m0zkip4o19w8tgj01malty].[none:ID:ok]' direction='ASC' using='[federated.1rg115m0zkip4o19w8tgj01malty].[min:ID:qk]' />
+          <filter class='quantitative' column='[federated.1rg115m0zkip4o19w8tgj01malty].[none:item_id:qk]' included-values='in-range'>
+            <min>30</min>
+            <max>100</max>
+          </filter>
+          <slices>
+            <column>[federated.1rg115m0zkip4o19w8tgj01malty].[none:item_id:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rg115m0zkip4o19w8tgj01malty].[sum:total_count:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1rg115m0zkip4o19w8tgj01malty].[none:date_block_num:ok]' value='39' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rg115m0zkip4o19w8tgj01malty].[sum:total_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='182' />
+                <format attr='maxheight' value='182' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1rg115m0zkip4o19w8tgj01malty].[none:ID:ok] * [federated.1rg115m0zkip4o19w8tgj01malty].[sum:total_count:qk])</rows>
+        <cols>[federated.1rg115m0zkip4o19w8tgj01malty].[none:date_block_num:ok]</cols>
+      </table>
+      <simple-id uuid='{9FC437E3-1A37-49DA-BEB0-9ABE5DD5BF71}' />
+    </worksheet>
+    <worksheet name='Sheet 16'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_train_set' name='federated.1rg115m0zkip4o19w8tgj01malty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rg115m0zkip4o19w8tgj01malty'>
+            <column aggregation='None' caption='Item Id (bin)' datatype='integer' name='[Item Id (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[item_id]' peg='0' size='455' />
+            </column>
+            <column-instance column='[item_id]' derivation='Count' name='[cnt:item_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='measure' type='quantitative' />
+            <column-instance column='[Item Id (bin)]' derivation='None' name='[none:Item Id (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1rg115m0zkip4o19w8tgj01malty].[cnt:item_id:qk]</rows>
+        <cols>[federated.1rg115m0zkip4o19w8tgj01malty].[none:Item Id (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1rg115m0zkip4o19w8tgj01malty].[Item Id (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{5D8D08C7-14BD-4F70-912D-6387BDECF48D}' />
+    </worksheet>
+    <worksheet name='Sheet 17'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_train_set' name='federated.1rg115m0zkip4o19w8tgj01malty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rg115m0zkip4o19w8tgj01malty'>
+            <column datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[ctd:ID:qk]' pivot='key' type='quantitative' />
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='measure' type='quantitative' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1rg115m0zkip4o19w8tgj01malty].[none:item_id:qk]' included-values='in-range'>
+            <min>30</min>
+            <max>1000</max>
+          </filter>
+          <slices>
+            <column>[federated.1rg115m0zkip4o19w8tgj01malty].[none:item_id:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rg115m0zkip4o19w8tgj01malty].[ctd:ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B2B5AFAE-0223-4D47-8C41-E25397BD1D82}' />
+    </worksheet>
+    <worksheet name='Sheet 18'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_train_set' name='federated.1rg115m0zkip4o19w8tgj01malty' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rg115m0zkip4o19w8tgj01malty'>
+            <column-instance column='[shop_id]' derivation='CountD' name='[ctd:shop_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rg115m0zkip4o19w8tgj01malty].[ctd:shop_id:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A315EAAA-2CB8-4B85-A440-C5EA5931CD8B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column-instance column='[shop_id]' derivation='CountD' name='[ctd:shop_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[ctd:shop_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{831C462A-E87D-497A-A25C-5BABBC7DD663}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column caption='Calculation1' datatype='boolean' name='[Calculation_1784551359111131136]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='{ FIXED [item_id], [shop_id], [date]:COUNT([item_cnt_day])} &gt; 1' />
+            </column>
+            <column-instance column='[item_cnt_day]' derivation='Count' name='[cnt:item_cnt_day:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Item Cnt Day' datatype='real' name='[item_cnt_day]' role='measure' type='quantitative' />
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1784551359111131136]' derivation='None' name='[none:Calculation_1784551359111131136:nk]' pivot='key' type='nominal' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[shop_id]' derivation='None' name='[none:shop_id:ok]' pivot='key' type='ordinal' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:Calculation_1784551359111131136:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1784551359111131136:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:Calculation_1784551359111131136:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok] / [federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok])</rows>
+        <cols>[federated.1x6oerq0uqovf6185sll50qc7cfo].[cnt:item_cnt_day:qk]</cols>
+      </table>
+      <simple-id uuid='{6F461EAE-368B-4AEB-A6B2-F3599199FFF3}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column aggregation='None' caption='Item Price (bin)' datatype='integer' name='[Item Price (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='3' formula='[item_price]' peg='0' size='4779' />
+            </column>
+            <column-instance column='[item_cnt_day]' derivation='Count' name='[cnt:item_cnt_day:qk]' pivot='key' type='quantitative' />
+            <column caption='Item Cnt Day' datatype='real' name='[item_cnt_day]' role='measure' type='quantitative' />
+            <column caption='Item Price' datatype='real' name='[item_price]' role='measure' type='quantitative' />
+            <column-instance column='[Item Price (bin)]' derivation='None' name='[none:Item Price (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x6oerq0uqovf6185sll50qc7cfo].[cnt:item_cnt_day:qk]</rows>
+        <cols>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:Item Price (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[Item Price (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{DC459ED4-D7FF-47A7-AFCC-D4E4606E0BBD}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Item Price' datatype='real' name='[item_price]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[item_price]' derivation='None' name='[none:item_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[shop_id]' derivation='None' name='[none:shop_id:ok]' pivot='key' type='ordinal' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_price:qk]' included-values='in-range'>
+            <min>-1.0</min>
+            <max>0.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:date:ok]' value='329' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok]</rows>
+        <cols>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:date:ok]</cols>
+      </table>
+      <simple-id uuid='{F5643753-A85B-4955-A4B9-8053361E7F92}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column-instance column='[item_price]' derivation='Avg' name='[avg:item_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Item Cnt Day' datatype='real' name='[item_cnt_day]' role='measure' type='quantitative' />
+            <column caption='Item Id' datatype='integer' name='[item_id]' role='dimension' type='ordinal' />
+            <column caption='Item Price' datatype='real' name='[item_price]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[item_id]' derivation='None' name='[none:item_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[shop_id]' derivation='None' name='[none:shop_id:ok]' pivot='key' type='ordinal' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+            <column-instance column='[item_cnt_day]' derivation='Sum' name='[sum:item_cnt_day:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok]'>
+            <groupfilter function='member' level='[none:item_id:ok]' member='2973' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok]'>
+            <groupfilter function='member' level='[none:shop_id:ok]' member='32' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok]</column>
+            <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1x6oerq0uqovf6185sll50qc7cfo].[sum:item_cnt_day:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1x6oerq0uqovf6185sll50qc7cfo].[avg:item_price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1x6oerq0uqovf6185sll50qc7cfo].[sum:item_cnt_day:qk] + [federated.1x6oerq0uqovf6185sll50qc7cfo].[avg:item_price:qk])</rows>
+        <cols>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:date:qk]</cols>
+      </table>
+      <simple-id uuid='{73E876AF-D03C-4BDD-9645-EBC6723EE298}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='items' name='federated.01tgvbp190ivyz13na5ev18gn4e2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01tgvbp190ivyz13na5ev18gn4e2'>
+            <column-instance column='[item_name]' derivation='Count' name='[cnt:item_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Item Name' datatype='string' name='[item_name]' role='dimension' type='nominal' />
+            <column-instance column='[item_name]' derivation='None' name='[none:item_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01tgvbp190ivyz13na5ev18gn4e2].[cnt:item_name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01tgvbp190ivyz13na5ev18gn4e2].[none:item_name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3788D154-EB4B-4397-A518-54609AF93107}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='shops' name='federated.0vaudu214xqknz17tjhcr0nzqglb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vaudu214xqknz17tjhcr0nzqglb'>
+            <column-instance column='[shop_name]' derivation='Count' name='[cnt:shop_name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[shop_id]' derivation='None' name='[none:shop_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[shop_name]' derivation='None' name='[none:shop_name:nk]' pivot='key' type='nominal' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+            <column caption='Shop Name' datatype='string' name='[shop_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0vaudu214xqknz17tjhcr0nzqglb].[none:shop_name:nk]' value='276' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vaudu214xqknz17tjhcr0nzqglb].[cnt:shop_name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0vaudu214xqknz17tjhcr0nzqglb].[none:shop_name:nk] / [federated.0vaudu214xqknz17tjhcr0nzqglb].[none:shop_id:ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{87AF9A8B-9981-4AE3-A2B1-CD9463689D8D}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_train' name='federated.1x6oerq0uqovf6185sll50qc7cfo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x6oerq0uqovf6185sll50qc7cfo'>
+            <column caption='Item Cnt Day' datatype='real' name='[item_cnt_day]' role='measure' type='quantitative' />
+            <column-instance column='[shop_id]' derivation='None' name='[none:shop_id:ok]' pivot='key' type='ordinal' />
+            <column caption='Shop Id' datatype='integer' name='[shop_id]' role='dimension' type='ordinal' />
+            <column-instance column='[item_cnt_day]' derivation='Sum' name='[sum:item_cnt_day:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:shop_id:ok]' member='10' />
+              <groupfilter function='member' level='[none:shop_id:ok]' member='11' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1x6oerq0uqovf6185sll50qc7cfo].[sum:item_cnt_day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:shop_id:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{48B7368C-FF62-4EC5-AB6F-91DB079DEB08}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='48'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1x6oerq0uqovf6185sll50qc7cfo].[none:item_id:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E524DFCE-D2D4-4787-9BAE-155B9D4E4DC2}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E89B266F-8080-4100-91E3-2621C84A632C}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8761EF7F-DD57-4C7F-8094-E05DAB6CF97C}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9EAC8BFA-2490-4DA0-B5AF-E979BE4217A4}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD8F8BED-249F-4740-B66A-4A63F907FB29}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3889ED3-7D51-48F1-9C4A-C40B6A4AE884}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF4A7052-A401-4AD4-A7A9-A62F49BEA964}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5487B854-D9D2-4DC0-80DF-1B9736861D8A}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{154510A9-8343-4FEC-B988-73CFD63CFACF}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28AD936B-1250-4C79-9F76-68D40400CC47}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C491E33F-17B6-4CB3-8506-15C7CD203518}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{59A0BB99-3BBB-4235-BBB2-9BF8C8DA8C33}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6AAA0896-C7A4-479A-9ED3-5DCCBD2157C5}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{783718F1-2AFC-4312-BAB6-E88AB5F190EF}' />
+    </window>
+    <window class='worksheet' name='Sheet 15'>
+      <cards>
+        <edge name='left'>
+          <strip size='283'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE421471-6C60-4B1C-B854-554C3D93FAEF}' />
+    </window>
+    <window class='worksheet' name='Sheet 16'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B6AEFC8E-E862-48EA-A7B7-972CD1599102}' />
+    </window>
+    <window class='worksheet' name='Sheet 17'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C9BC51E0-F7FB-43C4-ABCC-87300C08C267}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 18'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{25239D1E-D3FE-425F-8560-AC2175881281}' />
+    </window>
+  </windows>
+</workbook>
